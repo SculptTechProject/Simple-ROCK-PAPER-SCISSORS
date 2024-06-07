@@ -3,10 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROCK PAPER SCISSORS</title>
+    <title>Rock Paper Scissors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <script defer src="Bootstrap/js/bootstrap.bundle.min.js"></script>
     <script defer src="main.js"></script>
   </head>
   <body>
-
+    <div class="container">
+      <div class="contentTextdiv">
+        <p class="contentText" id="content"></p>
+      </div>
+      <div class="scoreText">
+        You<p class="humanScore" id="humanScore">0</p>
+        <p class=":">:</p>
+        <p class="computerScore" id="computerScore">0</p>PC
+      </div>
+      <div class="btnContainer">
+        <button type="button" class="btn btn-light px-5" id="rockBtn">
+          Rock
+        </button>
+        <button type="button" class="btn btn-light px-5" id="paperBtn">
+          Paper
+        </button>
+        <button type="button" class="btn btn-light px-5" id="scissorsBtn">
+          Scissors
+        </button>
+      </div>
+    </div>
   </body>
 </html>
